@@ -1,0 +1,219 @@
+<!-- place_card_item.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/placeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lahoree" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        android:requiresFadingEdge="horizontal"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/placeNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Place Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                />
+            <TextView
+                android:id="@+id/placeNameDetailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text=""
+                android:autoLink="all"
+                />
+
+        </LinearLayout>
+
+
+     </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/DescriptionLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carView"
+            android:padding="16dp"
+            android:text="Description"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_marginStart="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOff=""
+                    android:textOn=""
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/enTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/switchButton"
+                    android:layout_centerVertical="true"
+                    android:text="EN" />
+
+                <TextView
+                    android:id="@+id/urTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/switchButton"
+                    android:layout_centerVertical="true"
+                    android:text="UR" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/placeDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text=""
+        />
+    <TextView
+        android:id="@+id/GalleryHeaderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carView"
+        android:padding="16dp"
+        android:text="Gallery"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/galleryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/GalleryHeaderTextView"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/LocationHeaderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/galleryRecyclerView"
+        android:padding="16dp"
+        android:text="Location"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+    <!-- MapView to display the location -->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="Location of the Place"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/MustVisitPlacesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mapView"
+        android:padding="16dp"
+        android:text="Must Visit Places"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/nearbyRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:layout_margin="1dp"/>
+
+
+
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/searchCardView"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="16dp"
+        app:cardCornerRadius="16dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search for destinations"
+            android:iconifiedByDefault="false" />
+        <EditText
+            android:id="@+id/searchPlaceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:hint="Search For Places"
+            android:layout_gravity="center"
+            android:background="@color/material_dynamic_neutral_variant100"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Create Button -->
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/searchCardView"
+        android:layout_marginTop="150dp"
+        android:text="Create Account" />
+
+    <!-- Login Text and Button -->
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/createButton"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:text="Already registered? "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/loginButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/createButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/loginText"
+        android:clickable="true"
+        android:text="Login"
+
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <!-- Privacy Text -->
+    <TextView
+        android:id="@+id/privacyText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="Privacy Policy | Terms of Service"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/privacyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@id/privacyText"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Privacy Policy"
+        android:textColor="@color/green"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

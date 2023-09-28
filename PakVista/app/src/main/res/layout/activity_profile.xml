@@ -1,0 +1,84 @@
+<!-- profile_activity.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img"
+        android:contentDescription="Profile Picture" />
+
+    <ImageView
+        android:id="@+id/editNameIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImageView"
+        android:layout_alignParentStart="@id/profileImageView"
+        android:src="@drawable/ic_name"
+        android:contentDescription="Name Icon"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp" />
+
+    <TextView
+        android:id="@+id/profileNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImageView"
+        android:layout_centerHorizontal="true"
+        android:text="John Doe"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="8dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/profileNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/aboutSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/aboutIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_about_us"
+            android:contentDescription="About Us" />
+
+        <TextView
+            android:id="@+id/aboutLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="30dp"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/aboutEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutSection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:hint="Tell something about yourself..."
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+</RelativeLayout>

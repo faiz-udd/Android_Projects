@@ -1,0 +1,36 @@
+<!-- res/menu/navigation_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/nav_share"
+        android:title="Share"
+        android:icon="@drawable/ic_share"
+        />
+    <item
+        android:id="@+id/nav_feature_request"
+        android:title="Feature Request"
+        android:icon="@drawable/ic_feature_request" />
+    <item
+        android:id="@+id/nav_privacy_policy"
+        android:title="Privacy Policy"
+        android:icon="@drawable/ic_privacy" />
+    <item
+        android:id="@+id/nav_terms_conditions"
+        android:title="Terms and Conditions"
+        android:icon="@drawable/ic_term_conditions" />
+    <item
+        android:id="@+id/nav_copyright"
+        android:title="Copyright"
+        android:icon="@drawable/ic_copy_right" />
+    <item
+        android:id="@+id/nav_about_us"
+        android:title="About Us"
+        android:icon="@drawable/ic_about_us" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Log Out"
+        android:icon="@drawable/ic_log_out" />
+</menu>

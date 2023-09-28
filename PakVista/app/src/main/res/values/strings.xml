@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PakVista</string>
+    <string name="openDrawer">Open Navigation Drawer</string>
+    <string name="closeDrawer">Close Navigation Drawer</string>
+    <string name="khyber_pakhtunkhwa">Khyber PakhtunKhwa</string>
+    <string name="punjab">Punjab</string>
+</resources>

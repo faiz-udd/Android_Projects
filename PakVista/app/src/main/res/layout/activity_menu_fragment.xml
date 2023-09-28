@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:fitsSystemWindows="true"
+tools:openDrawer="start"
+android:id="@+id/DrawerLayout"
+    android:orientation="vertical"
+tools:context=".MenuFragment">
+
+    <!-- Content layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Include the MainActivity layout -->
+        <include layout="@layout/activity_home"></include>
+        <!-- Container for the fragment -->
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+    android:id="@+id/NavigationView"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    app:headerLayout="@layout/header_navigation"
+    app:menu="@menu/navigation_menu"
+    >
+</com.google.android.material.navigation.NavigationView>
+
+
+    <include layout="@layout/app_bar_main"/>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

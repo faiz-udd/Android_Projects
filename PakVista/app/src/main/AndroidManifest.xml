@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="1694099494424379" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PakVista"
+        tools:targetApi="31">
+        <activity
+            android:name=".PlaceDetails.ShahiMasjidChitralActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.KalashValleyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.NeelamValleyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.HingolNationalParkDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.QuettaDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.PirGhaibDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.OrmaraDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.GadaniBeachDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.MehergarhDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.ZiaratDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.GawadarDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.EmpressMarketDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.MohattaPalaceDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.GorakhHillStationDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SindhMuseumDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.MakliNecropolisDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.HyderabadDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.KarachiDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.KhapluValleyDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.GhizerDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.NagarValleyDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.DeosaiNationalParkDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.ShigarValleyDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SkarduDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.FairyMeadowsDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.K2DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.HunzaValleyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.JhelumDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.GujranwalaDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.SheikhuPuraDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.SialkotDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.FaisalAbadDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.BahawulpurDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.MultanDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.TaxilaDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.RawalPindiDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.DeraIsmailKhanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.KalamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.TakhtiBahiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.ShandurPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.MalamJabbaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.PunjkoraValleyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.KaghanValleyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.GalliyatRegionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.BunnerValleyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.KhyberPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.AyubiaNationalParkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.PeshawarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.DirKumratValleyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.ChitralValleyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Provinces.BalochistanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Provinces.SindhActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Provinces.GBActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Provinces.PunjabActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Provinces.KpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.MurreeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.GilgitCityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.swatValleyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.IslamabadDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.MohenjoDaroDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceDetails.LahoreDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuFragment"
+            android:exported="false" />
+        <activity
+            android:name=".LikedPlacesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecommendedPlacesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".privacyPolicy"
+            android:exported="false" />
+        <activity
+            android:name=".signupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".homeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

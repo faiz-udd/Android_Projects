@@ -1,0 +1,846 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF6F6"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--     /Section 1-->
+    <RelativeLayout
+        android:id="@+id/section1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FAF6F6">
+
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:id="@+id/cardView"-->
+        <!--            android:layout_width="70dp"-->
+        <!--            android:layout_height="80dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_margin="16dp"-->
+        <!--            app:cardCornerRadius="50dp"-->
+        <!--            android:elevation="4dp"-->
+        <!--            app:cardUseCompatPadding="true"-->
+        <!--            android:contentDescription="Menu"-->
+        <!--            >-->
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/menuIcon"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:contentDescription="MenuIcon"-->
+        <!--                android:src="@drawable/menu_icon"-->
+        <!--                android:clickable="true"/>-->
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+
+        <!--        &lt;!&ndash;        Right Imageview Button&ndash;&gt;-->
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:id="@+id/cardViewRight"-->
+        <!--            android:layout_width="80dp"-->
+        <!--            android:layout_height="80dp"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_marginEnd="16dp"-->
+        <!--            app:cardCornerRadius="50dp"-->
+        <!--            android:elevation="4dp"-->
+        <!--            app:cardUseCompatPadding="true">-->
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/ImageViewProfile"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="48dp"-->
+        <!--            android:contentDescription="Profile"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            android:clickable="true"-->
+        <!--            android:src="@drawable/img" />-->
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+        <!--        &lt;!&ndash; TextView in between ImageButtons &ndash;&gt;-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/textViewCenter"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:text="Tourista"-->
+        <!--            android:textSize="30sp"-->
+        <!--            android:textStyle="bold" />-->
+
+    </RelativeLayout>
+
+    <!-- Section 2 -->
+    <LinearLayout
+        android:id="@+id/section2"
+        android:layout_below="@id/section1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FAF6F6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- CardView 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewKp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            app:cardCornerRadius="100dp">
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/kpkmap"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="@string/khyber_pakhtunkhwa"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="KPK"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--                Card View 2-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewPunjab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            app:cardCornerRadius="100dp">
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/punjab_map"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="@string/punjab"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Punjab"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                Card View 3-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewGB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            app:cardCornerRadius="100dp">
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/gilgit_map"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Gilgit Baltistan"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gilgit-Baltistan"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                card view 4-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewSindh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            app:cardCornerRadius="100dp">
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/sindhh_map"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Sindh"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sindh"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                Card view 5-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewBalochistan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            app:cardCornerRadius="100dp">
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/balochistan_map"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Balochistan"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Balochistan"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <!-- Section 3 -->
+    <LinearLayout
+        android:id="@+id/section3"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@id/section2"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextviewRecommended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Recommended"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextviewExplore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Explore"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!--        Recommended places Explore them-->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- CardView 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewLahore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    android:clickable="true"
+                    android:padding="4dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            app:cardCornerRadius="16dp">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:src="@drawable/lahore"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Lahore"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lahore"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                   Card view 2-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewMohenjoDaro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            app:cardCornerRadius="16dp">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:src="@drawable/mohenjo_daro"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Mohenjo-Daro"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mohenjo-Daro"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--                    card 3-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewIslamabad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            app:cardCornerRadius="16dp">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:src="@drawable/islamabad"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Islamabad"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Islamabad"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                    Card view 4-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    android:padding="4dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            app:cardCornerRadius="16dp">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:src="@drawable/northpk"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Northern Areas"/>
+
+                            <Button
+                                android:id="@+id/ExploreButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Explore >"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="50dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Northern Areas"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <!-- Section 4 -->
+
+    <LinearLayout
+        android:id="@+id/section4"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@id/section3"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutTextviewS4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextviewMostLiked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Most Liked"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_heart"
+                android:contentDescription="Heart Icon"/>
+
+
+        </RelativeLayout>
+
+        <!--        Recommended places Explore them-->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- CardView 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewSawatValley"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            app:cardCornerRadius="16dp">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:src="@drawable/sawat_valley"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Sawat Valley"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sawat Valley"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                   Card view 2-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewGBaltistan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            app:cardCornerRadius="16dp">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:src="@drawable/gb"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Gilgit-Baltistan"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gilgit-Baltistan"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                    card 3-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewMurree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            app:cardCornerRadius="16dp">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:src="@drawable/murree"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Murree"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Murree"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                    Card view 4-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    android:padding="4dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            app:cardCornerRadius="16dp">
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:src="@drawable/lahoree"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Lahore"/>
+
+                            <Button
+                                android:id="@+id/ExploreButton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Explore >"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="50dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lahore"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:padding="4dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

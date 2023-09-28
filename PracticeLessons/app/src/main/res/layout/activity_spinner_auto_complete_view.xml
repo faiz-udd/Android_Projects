@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".Spinner_AutoCompleteViewActivity">
 
 
@@ -14,27 +13,27 @@
         android:layout_height="wrap_content"
         android:text="Select an ID Proof"
         android:textSize="25sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
     <!--    for spinner-->
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="50dp" />
-          </LinearLayout>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
 
     <!--    For AutoCompleteTextView-->
 
-<AutoCompleteTextView
-android:layout_width="match_parent"
-android:layout_height="50dp"
-android:id="@+id/AutoCompletView"
-android:layout_marginTop="77dp"
-android:hint="search here.."/>
+    <AutoCompleteTextView
+        android:id="@+id/AutoCompletView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="77dp"
+        android:hint="search here.." />
 
     <Button
         android:id="@+id/btnNextpage"

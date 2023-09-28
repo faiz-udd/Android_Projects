@@ -1,0 +1,54 @@
+<!-- res/layout/fragment_feature_request.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Feature Request"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titleTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="
+
+Hello there,
+
+Thank you for taking the time to contribute your ideas to make Tourista even better!
+We truly value your input and suggestions.
+Your feature request will help us understand how we can enhance the app to meet the needs and preferences of our users.
+Please provide as much detail as possible about the feature you're requesting.
+Describe how it works, the benefits it would bring, and any specific use cases you have in mind.
+The more information you provide, the better we can assess the feasibility and potential impact of the feature.
+While we cannot guarantee immediate implementation of all feature requests, your insights are invaluable in shaping the future of Tourista.
+Our development team carefully reviews each suggestion, and your input plays a crucial role in our decision-making process.
+
+Feel free to use the space below to share your feature request in detail.
+Thank you once again for being a part of our journey to create a more exceptional app experience.
+
+Best regards,
+The Developer
+"
+        android:textSize="15sp" />
+
+    <!-- Add your feature request input fields here -->
+
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Send Email" />
+</LinearLayout>
